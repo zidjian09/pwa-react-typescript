@@ -1,0 +1,11 @@
+.bg-custom {
+    background-color: #fff;
+}
+
+.nav-link {
+    color: var(--footer-text) !important;
+}
+
+.nav-link:focus, .nav-link:hover, .nav-link.active {
+    color: var(--primary) !important;
+}

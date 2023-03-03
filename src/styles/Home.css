@@ -1,0 +1,86 @@
+.input-container {
+    position: relative;
+}
+  
+.input-container svg {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: var(--tertiary-tint);
+}
+
+.txt-search {
+    padding-left: 40px !important;
+}
+
+.btn-search {
+    color: var(--primary) !important;
+}
+
+.card-img-top svg {
+    color: var(--primary);
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.card-category {
+    min-height: 66px;
+}
+
+.card-restaurant {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 100px !important;
+}
+
+.card-resto-name {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.card-resto-discount {
+    font-size: 14px;
+    color: var(--bs-red);
+    margin-bottom: 0;
+}
+
+.card-resto-rating {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.star-rating {
+    color: var(--primary);
+}
+
+.flex-item-l {
+    padding: 10px;
+    flex: 30%;
+}
+
+.flex-item-r {
+    padding: 10px;
+    flex: 70%;
+}
+
+.card-resto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-slide {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img-resto {
+    width: 75px !important;
+}
