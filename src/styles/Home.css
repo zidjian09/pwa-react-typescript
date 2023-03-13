@@ -84,3 +84,7 @@
 .img-resto {
     width: 75px !important;
 }
+
+.deco-none {
+    text-decoration: none;
+}

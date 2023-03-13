@@ -9,3 +9,7 @@
 .nav-link:focus, .nav-link:hover, .nav-link.active {
     color: var(--primary) !important;
 }
+
+.nav-lbl {
+    font-size: 10px;
+}

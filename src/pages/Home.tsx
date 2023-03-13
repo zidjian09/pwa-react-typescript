@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter, faSearch, faPizzaSlice, faBurger, faWineBottle, faWineGlass, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom";
 
 import '../styles/Home.css';
 import 'swiper/css';
@@ -31,27 +32,32 @@ const restaurants = [{
   label: "Mcdo",
   icon: mcdo,
   rating: 4.5,
-  discount: 15
+  discount: 15,
+  route: '/restaurant'
 }, {
   label: "Shakeys",
   icon: shakeys,
   rating: 4.8,
-  discount: 20
+  discount: 20,
+  route: '/restaurant'
 }, {
   label: "Jollibee",
   icon: jollibee,
   rating: 4.5,
-  discount: 15
+  discount: 15,
+  route: '/restaurant'
 }, {
   label: "Greenwich",
   icon: greenwich,
   rating: 4.8,
-  discount: 20
+  discount: 20,
+  route: '/restaurant'
 }, {
   label: "Burger King",
   icon: burger_king,
   rating: 4.5,
-  discount: 15
+  discount: 15,
+  route: '/restaurant'
 }];
 
 // const imgStyle = {
@@ -116,33 +122,35 @@ const Home = () => (
 
     {
       restaurants.map((resto, index) => (
-        <div className="row mb-3" key={index}>
-          <div className="col-12">
-            <div className="card border-0 shadow-sm card-restaurant">
-              <div className="flex-item-l d-flex justify-content-center align-items-center">
-                <img src={resto.icon} alt={resto.label} className="img-fluid img-resto" />
-              </div>
-              <div className="flex-item-r">
-                <div className="card-resto-container">
-                  <div className="row">
-                    <div className="col-6">
-                      <p className="card-resto-name fw-bold">{resto.label}</p>
+        <Link to={resto.route} className="deco-none">
+          <div className="row mb-3" key={index}>
+            <div className="col-12">
+              <div className="card border-0 shadow-sm card-restaurant">
+                <div className="flex-item-l d-flex justify-content-center align-items-center">
+                  <img src={resto.icon} alt={resto.label} className="img-fluid img-resto" />
+                </div>
+                <div className="flex-item-r">
+                  <div className="card-resto-container">
+                    <div className="row">
+                      <div className="col-6">
+                        <p className="card-resto-name fw-bold">{resto.label}</p>
+                      </div>
+                      <div className="col-6 d-flex justify-content-end align-items-end">
+                        <p className="card-resto-discount">{resto.discount}% OFF</p>
+                      </div>
                     </div>
-                    <div className="col-6 d-flex justify-content-end align-items-end">
-                      <p className="card-resto-discount">{resto.discount}% OFF</p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-12 d-flex">
-                      <FontAwesomeIcon size="1x" icon={faStar} className="star-rating"></FontAwesomeIcon>
-                      <p className="card-resto-rating">{resto.rating}</p>
+                    <div className="row">
+                      <div className="col-12 d-flex">
+                        <FontAwesomeIcon size="1x" icon={faStar} className="star-rating"></FontAwesomeIcon>
+                        <p className="card-resto-rating">{resto.rating}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))
     }
 

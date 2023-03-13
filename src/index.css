@@ -24,6 +24,45 @@
   --footer-text: #5a5a5b;
 }
 
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+* {
+  font-family: "Gilroy-Regular";
+}
+
+h1 {
+  font-family: "Gilroy-Medium" !important;
+  font-size: 20pt;
+}
+
+h2 {
+  font-family: "Gilroy-Medium" !important;
+  font-size: 17pt;
+}
+
+h3 {
+  font-family: "Gilroy-Medium" !important;
+  font-size: 15pt;
+}
+
+h4 {
+  font-family: "Gilroy-Medium" !important;
+  font-size: 13pt;
+}
+
 .primary {
   color: var(--primary);
 }
@@ -53,7 +92,7 @@ code {
     monospace;
 }
 
-h1, h2, h3, h4, h5, h6, small, p {
+h1, h2, h3, h4, h5, h6, small, p, label {
   color: var(--tertiary);
 }
 

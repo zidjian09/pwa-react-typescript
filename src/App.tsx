@@ -8,6 +8,7 @@ import Layout from './pages/Layout';
 import Cart from './pages/Cart';
 import Profile from './pages/Profile';
 import Search from './pages/Search';
+import Restaurant from './pages/Restaurant';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="cart" element={<Cart />} />
           <Route path="profile" element={<Profile />} />
           <Route path="search" element={<Search />} />
+          <Route path="restaurant" element={<Restaurant />} />
         </Route>
       </Routes>
       {/* <Navigation /> */}

@@ -1,0 +1,35 @@
+.cart-item__name {
+    font-family: "Gilroy-SemiBold";
+    text-transform: uppercase;
+}
+
+.cart-item__price {
+    color: var(--primary) !important;
+    font-family: "Gilroy-SemiBold";
+}
+
+.cart-item__btn-minus {
+    background-color: white;
+}
+
+.cart-item__btn-plus {
+    background-color: var(--primary) !important;
+}
+
+.cart-item__btn-plus:hover {
+    background-color: var(--primary-shade);
+    border-color: var(--primary-shade);
+}
+
+.cart-item__amount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cart__total {
+    color: var(--primary) !important;
+}
+
+.cart__checkout {
+    background-color: var(--primary) !important;
+}

@@ -44,7 +44,7 @@ const Layout = () => {
                     <Link to={tab.route} className={"nav-link" + (tab.id === activeLink ? " active" : "")}>
                       <div className="d-flex flex-column justify-content-center align-items-center">
                         <FontAwesomeIcon size="lg" icon={tab.icon} />
-                        <div>{tab.label}</div>
+                        <div className="nav-lbl">{tab.label}</div>
                       </div>
                     </Link>
                   </li>
